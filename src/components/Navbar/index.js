@@ -1,5 +1,5 @@
 import React from 'react'
-import { Nav, NavLink, NavContainer, NavOption } from './NavbarElements';
+import { Nav, NavLink, NavContainer, NavOption, ButtonContainer } from './NavbarElements';
 
 const Navbar = () => {
     return (
@@ -9,9 +9,11 @@ const Navbar = () => {
                     <NavLink to="/">
                         <h3>RIP FITNESS</h3>
                     </NavLink>
-                    <NavOption to="/user">
-                        <h4>Create User</h4>
+                    <ButtonContainer>
+                    <NavOption to="/dashboard">
+                        Dashboard
                     </NavOption>
+                    </ButtonContainer>
                </NavContainer>
             </Nav> 
         </>

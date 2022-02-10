@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link as LinkR } from 'react-router-dom';
 
-export const Button1 = styled(Link)`
+export const Button1 = styled(LinkR)`
 background: rgb(44,154,168);
 background: linear-gradient(152deg, rgba(44,154,168,1) 0%, rgba(255,255,255,1) 100%);
     white-space: nowrap;
@@ -20,7 +20,7 @@ background: linear-gradient(152deg, rgba(44,154,168,1) 0%, rgba(255,255,255,1) 1
     justify-content: center;
     align-items: center;
     padding: ${({big}) => (big ? '16px 40px' : '14px 24px')};
-    color: ${({primary}) => (primary ? '#fff' : '#000d1a')};
+    color: #fff;
     font-size: ${({ big }) => (big ? '20px' : '14px')};
 
     &:hover {
@@ -29,7 +29,7 @@ background: linear-gradient(152deg, rgba(44,154,168,1) 0%, rgba(255,255,255,1) 1
     }
 `;
 
-export const Button2 = styled(Link)`
+export const Button2 = styled(LinkR)`
 background: rgb(189,115,242);
 background: linear-gradient(152deg, rgba(189,115,242,1) 0%, rgba(255,255,255,1) 100%);
     white-space: nowrap;
@@ -48,7 +48,7 @@ background: linear-gradient(152deg, rgba(189,115,242,1) 0%, rgba(255,255,255,1) 
     justify-content: center;
     align-items: center;
     padding: ${({big}) => (big ? '16px 40px' : '14px 24px')};
-    color: ${({primary}) => (primary ? '#fff' : '#000d1a')};
+    color: #fff;
     font-size: ${({ big }) => (big ? '20px' : '14px')};
 
     &:hover {
