@@ -4,7 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build",
+        "install-client": "npm install",
+        "heroku-postbuild": "npm run install && npm run build",
+        "server": "nodemon index.js",
+        "develop": "concurrently --kill-others-on-fail \"nodemon run\" \"npm run start\"",
+        "start": "concurrently --kill-others-on-fail \"nodemon run\" \"npm run start\""
   },
   "keywords": [],
   "author": "",
