@@ -78,7 +78,7 @@ export default class CreateExercise extends Component {
     axios.post('http://localhost:5000/exercises/add', exercise)
       .then(res => console.log(res.data));
 
-    window.location = '/';
+    window.location = '/dashboard';
   }
 
   render() {
@@ -89,7 +89,7 @@ export default class CreateExercise extends Component {
         <Title>
           <h3>Create Exercise Log</h3>
         </Title>
-        <form onSubmit={this.onSubmit}></form>
+        <form onSubmit={this.onSubmit}>
         <Box>
         <HeaderLabel>Username:</HeaderLabel>
             <Select ref="userInput"
@@ -126,6 +126,7 @@ export default class CreateExercise extends Component {
         <ButtonContainer>
           <Button type="submit">Submit</Button>
         </ButtonContainer>
+        </form>
         </div>
       </Section>
     </>
